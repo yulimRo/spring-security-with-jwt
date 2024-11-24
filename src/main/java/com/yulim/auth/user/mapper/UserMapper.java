@@ -24,9 +24,9 @@ public class UserMapper {
                 .userId(userEntity.getUserId())
                 .userName(userEntity.getUserName())
                 .password(userEntity.getPassword())
-                .createDate(userEntity.getCreateDate() != null ? userEntity.getCreateDate().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss")) : "")
+                .createDate(userEntity.getCreateDate() != null ? userEntity.getCreateDate().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss")) : null)
                 .creatorId(userEntity.getCreatorId())
-                .updateDate(userEntity.getUpdateDate() != null ? userEntity.getUpdateDate().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss")) : "")
+                .updateDate(userEntity.getUpdateDate() != null ? userEntity.getUpdateDate().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss")) : null)
                 .updateId(userEntity.getUpdaterId())
                 .build();
     }
